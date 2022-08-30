@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+html{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.left-container{
+    width: 100%;
+    background: url('../assets//img/MoodyCheeseboard.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    height: 150px;
+    background-attachment: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-container img{
+    width: 24px;
+    margin-right: .5rem;
+}
+.left-container_title{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.right-container{
+    background-color: rgb(255, 255, 255);
+}
+.right-container > p{
+    padding: 0 1rem;
+    text-align: justify;
+}
+.right-container > p:nth-child(2){
+    text-align: end;
+}
+.form-container{
+    background-color: antiquewhite;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+.form-container p{
+    font-weight: bold;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"], 
+button{
+    width: 100%;
+}
+button{
+    margin: 1rem 0;
+}
+
+
+
+
+
+
