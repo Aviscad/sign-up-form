@@ -18,60 +18,57 @@
             </div>
         </div>
         <div class="right-container">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started. You <i>know</i> you want to!
             </p>
-            <p>You <i>know</i> you want to!</p>
+            <p>This was made by <a href="https://github.com/Aviscad" target="_blank">@Aviscad</a> &copy; 2022</p>
             <div class="form-container">
-                <form action="#" method="post">
+                <form method="post" id="form">
                     <legend>Lets do this!</legend>
                     <fieldset>
                         <div class="input-container">
                             <label for="first-name">First Name:</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="Jhon" oninvalid="this.setCustomValidity('Name is requiered')"
-                            oninput="setCustomValidity('')" required>
+                            <input type="text" id="first-name" name="first-name" placeholder="Jhon" oninvalid="this.setCustomValidity('First name is required')" oninput="setCustomValidity('')" required>
                         </div>
         
                         <div class="input-container">
                             <label for="last-name">Last Name:</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Smith" oninvalid="this.setCustomValidity('Last name is required')"
-                            oninput="setCustomValidity('')" required>
+                            <input type="text" id="last-name" name="last-name" placeholder="Smith" oninvalid="this.setCustomValidity('Last name is required')" oninput="setCustomValidity('')" required>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="example@mail.com" oninvalid="this.setCustomValidity('Email is not valid')"
-                            oninput="setCustomValidity('')" required>
+                            <input type="email" name="email" id="email" placeholder="example@mail.com" oninvalid="this.setCustomValidity('Email is required')" oninput="setCustomValidity('')" required>
                         </div>
     
                         <div class="input-container">
                             <label for="phone">Phone Number</label>
-                            <input type="text" name="phone" id="phone" placeholder="9789 9782" oninvalid="this.setCustomValidity('Phone number is required')"
-                            oninput="setCustomValidity('')" required>
+                            <input type="text" name="phone" id="phone" placeholder="9789 9782" oninvalid="this.setCustomValidity('Phone is required')" oninput="setCustomValidity('')" required>
                         </div>
                     </fieldset>
                     
                     <fieldset>
                         <div class="input-container">
                             <label for="password">Password:</label>
-                            <input type="password" name="password" id="password" oninvalid="this.setCustomValidity('You have to provide a password')"
-                            oninput="setCustomValidity('')" required>
+                            <input type="password" name="password" id="password" oninvalid="this.setCustomValidity('Password is required')" oninput="setCustomValidity('')" required>
                         </div>
     
                         <div class="input-container">
                             <label for="c-password">Confirm Password:</label>
-                            <input type="password" name="c-password" id="c-password" oninvalid="this.setCustomValidity('Password does not match')"
-                            oninput="setCustomValidity('')" required>
+                            <input type="password" name="c-password" id="c-password" oninvalid="this.setCustomValidity('Password is required')" oninput="setCustomValidity('')" required>
                         </div>
                     </fieldset>
+                    <div id="errors"></div>
                     <fieldset>
                         <div class="input-container">
-                            <button type="submit">Create Account</button>
+                            <button type="submit" id="submit">Create Account</button>
                         </div>
                     </fieldset>
                 </form>
             </div>
-            <p>Already have an account? <a href="#">Log In</a></p>
+            <p>Already have an account? <a href="#">Log In</a>
+            </p>
+            
         </div>
     </div>
    <script src="./js/script.js"></script>

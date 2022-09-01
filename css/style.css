@@ -83,7 +83,7 @@ button[type="submit"]:hover{
 .right-container > p:last-child{
     text-align: center;
 }
-.right-container > p:nth-child(2){
+.right-container > p:nth-child(2) {
     text-align: end;
 }
 .form-container{
@@ -107,8 +107,11 @@ button[type="submit"]:hover{
     align-items: center;
     padding: 0 1rem;
 }
-
-
+#errors{
+    color: red;
+    font-size: .85rem;
+    font-weight: bold;
+}
 
 @media (min-width:481px) {
     form{
