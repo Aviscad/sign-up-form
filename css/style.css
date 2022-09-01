@@ -4,6 +4,8 @@ html{
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
 }
+body{
+    background-color: #11031c;}
 a{
     color: #FFAE6D;
     text-decoration: none;
@@ -18,15 +20,27 @@ input[type="text"],
 input[type="email"],
 input[type="password"], 
 button[type="submit"]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
     min-width: 100%;
     margin: .3rem 0;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 button[type="submit"]{
     margin-top: .6rem;
     padding: .2rem;
+    border: 1px solid #000;
     background-color: #fff;
-    border: 1px thin;
     cursor: pointer;
+}
+button[type="submit"]:hover{
+    background-color: rgb(234, 234, 234);
 }
 .container{
     display: flex;
@@ -63,7 +77,7 @@ button[type="submit"]{
     background-color: rgb(255, 255, 255);
 }
 .right-container > p{
-    padding: 0 1rem;
+    padding: 0 6rem;
     text-align: justify;
 }
 .right-container > p:last-child{
@@ -73,7 +87,7 @@ button[type="submit"]{
     text-align: end;
 }
 .form-container{
-    background-color: #FFAE6D;
+    background-color: #fbb037;
     padding: 1rem;
     text-align: center;
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,.5);
@@ -158,6 +172,16 @@ button[type="submit"]{
     input[type="password"], 
     button[type="submit"]{
         width: 200px;
+        text-align: center;
+    }
+}
+
+@media (min-width:1366px) { 
+    input[type="text"],
+    input[type="email"],
+    input[type="password"], 
+    button[type="submit"]{
+        width: 300px;
         text-align: center;
     }
 }

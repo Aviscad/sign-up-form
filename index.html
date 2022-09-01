@@ -22,40 +22,46 @@
             </p>
             <p>You <i>know</i> you want to!</p>
             <div class="form-container">
-                <form action="" method="post">
+                <form action="#" method="post">
                     <legend>Lets do this!</legend>
                     <fieldset>
                         <div class="input-container">
                             <label for="first-name">First Name:</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                            <input type="text" id="first-name" name="first-name" placeholder="Jhon" oninvalid="this.setCustomValidity('Name is requiered')"
+                            oninput="setCustomValidity('')" required>
                         </div>
         
                         <div class="input-container">
                             <label for="last-name">Last Name:</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                            <input type="text" id="last-name" name="last-name" placeholder="Smith" oninvalid="this.setCustomValidity('Last name is required')"
+                            oninput="setCustomValidity('')" required>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="example@mail.com">
+                            <input type="email" name="email" id="email" placeholder="example@mail.com" oninvalid="this.setCustomValidity('Email is not valid')"
+                            oninput="setCustomValidity('')" required>
                         </div>
     
                         <div class="input-container">
                             <label for="phone">Phone Number</label>
-                            <input type="text" name="phone" id="phone" placeholder="9789 9782">
+                            <input type="text" name="phone" id="phone" placeholder="9789 9782" oninvalid="this.setCustomValidity('Phone number is required')"
+                            oninput="setCustomValidity('')" required>
                         </div>
                     </fieldset>
                     
                     <fieldset>
                         <div class="input-container">
                             <label for="password">Password:</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" oninvalid="this.setCustomValidity('You have to provide a password')"
+                            oninput="setCustomValidity('')" required>
                         </div>
     
                         <div class="input-container">
                             <label for="c-password">Confirm Password:</label>
-                            <input type="password" name="c-password" id="c-password">
+                            <input type="password" name="c-password" id="c-password" oninvalid="this.setCustomValidity('Password does not match')"
+                            oninput="setCustomValidity('')" required>
                         </div>
                     </fieldset>
                     <fieldset>
@@ -68,6 +74,6 @@
             <p>Already have an account? <a href="#">Log In</a></p>
         </div>
     </div>
-   
+   <script src="./js/script.js"></script>
 </body>
 </html>
